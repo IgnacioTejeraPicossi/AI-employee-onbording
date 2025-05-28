@@ -68,6 +68,19 @@ npm start
 - POST `/api/onboarding/:employeeId/documents` - Add new document
 - PATCH `/api/onboarding/:employeeId/documents/:documentId` - Update document status
 
+## Onboarding Tasks UI Features
+
+The Onboarding Tasks panel in the client application now includes:
+- A wide, modern table view of all onboarding tasks for the selected employee.
+- Status chips for each task (e.g., pending, completed) with color coding.
+- An **Add Task** button that opens a dialog to create a new task (Title, Description, Due Date).
+- **Edit** and **Delete** actions for each task:
+  - Edit opens a dialog pre-filled with the task's info for easy updating.
+  - Delete opens a confirmation dialog before removing the task.
+- Mark tasks as completed directly from the table.
+
+These features make it easy to manage onboarding tasks visually and efficiently from the web interface.
+
 ## Security
 
 - All routes except login and register are protected with JWT authentication
