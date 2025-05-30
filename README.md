@@ -60,6 +60,7 @@ npm start
 - DELETE `/api/employees/:id` - Delete employee
 - PATCH `/api/employees/:id/progress` - Update onboarding progress
 
+
 ### Onboarding
 - GET `/api/onboarding/:employeeId/tasks` - Get employee tasks
 - POST `/api/onboarding/:employeeId/tasks` - Add new task
@@ -68,7 +69,8 @@ npm start
 - POST `/api/onboarding/:employeeId/documents` - Add new document
 - PATCH `/api/onboarding/:employeeId/documents/:documentId` - Update document status
 
-## Onboarding Tasks UI Features
+## Now includes a new section describing the latest "Onboarding Tasks" UI features:
+
 
 The Onboarding Tasks panel in the client application now includes:
 - A wide, modern table view of all onboarding tasks for the selected employee.
