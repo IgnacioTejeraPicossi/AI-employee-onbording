@@ -83,6 +83,23 @@ The Onboarding Tasks panel in the client application now includes:
 
 These features make it easy to manage onboarding tasks visually and efficiently from the web interface.
 
+## Default Onboarding Tasks Template
+
+When a new employee is created, the application automatically assigns a standard set of onboarding tasks to them. This helps ensure a consistent onboarding process for all employees.
+
+**The default onboarding tasks (in English) are:**
+
+1. Employee review after 6 months – Schedule and conduct a review meeting after 6 months.
+2. Create competence plan – Develop a competence plan for the employee.
+3. Review internal systems – Go through Tripletex, Teams, CV-partner, and other relevant systems.
+4. Assign mentor and guesting in key projects – Assign a mentor and arrange guesting in central projects if needed.
+5. Create system accesses – Set up necessary system accesses for the employee.
+6. Order and deliver phone – Order and hand over a phone to the employee.
+7. Order and deliver PC/Mac – Order and hand over a PC or Mac to the employee.
+8. Order and deliver key card – Order and hand over a key card to the employee.
+
+These tasks are visible in the onboarding tasks panel for each employee and can be managed (marked as completed, edited, or deleted) through the web interface.
+
 ## Security
 
 - All routes except login and register are protected with JWT authentication

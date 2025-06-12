@@ -43,7 +43,53 @@ router.post('/', [
             return res.status(400).json({ errors: errors.array() });
         }
 
-        const employee = new Employee(req.body);
+        // Onboarding tasks template (English)
+        const onboardingTasksTemplate = [
+            {
+                title: 'Employee review after 6 months',
+                description: 'Schedule and conduct a review meeting after 6 months.',
+                status: 'pending'
+            },
+            {
+                title: 'Create competence plan',
+                description: 'Develop a competence plan for the employee.',
+                status: 'pending'
+            },
+            {
+                title: 'Review internal systems',
+                description: 'Go through Tripletex, Teams, CV-partner, and other relevant systems.',
+                status: 'pending'
+            },
+            {
+                title: 'Assign mentor and guesting in key projects',
+                description: 'Assign a mentor and arrange guesting in central projects if needed.',
+                status: 'pending'
+            },
+            {
+                title: 'Create system accesses',
+                description: 'Set up necessary system accesses for the employee.',
+                status: 'pending'
+            },
+            {
+                title: 'Order and deliver phone',
+                description: 'Order and hand over a phone to the employee.',
+                status: 'pending'
+            },
+            {
+                title: 'Order and deliver PC/Mac',
+                description: 'Order and hand over a PC or Mac to the employee.',
+                status: 'pending'
+            },
+            {
+                title: 'Order and deliver key card',
+                description: 'Order and hand over a key card to the employee.',
+                status: 'pending'
+            }
+        ];
+
+        // Add tasks to the new employee
+        const employeeData = { ...req.body, tasks: onboardingTasksTemplate };
+        const employee = new Employee(employeeData);
         await employee.save();
         res.status(201).json(employee);
     } catch (error) {
